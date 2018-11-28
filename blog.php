@@ -30,7 +30,7 @@
         $name    = trim($_POST['name']    ?? '');
         $blog   = trim($_POST['blog']   ?? '');
         $title = trim($_POST['title'] ??'');
-        $image = trim($_Post['image'] ??'');
+        $image = trim($_POST['image'] ??'');
         if($name === ''){
             $errors[] = "Bitte geben sie einen Namen ein.";
         }

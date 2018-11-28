@@ -21,13 +21,13 @@
     
     foreach($stmt as $output){?>
         <div class="form-actions">
-            <h3><?= htmlspecialchars($output['created_by'], ENT_QUOTES, "UTF-8"); ?></h1>
-            <h4><?= htmlspecialchars($output['post_title'], ENT_QUOTES, "UTF-8"); ?></h1>
+            <h1><?= htmlspecialchars($output['created_by'], ENT_QUOTES, "UTF-8"); ?></h1>
+            <h2><?= htmlspecialchars($output['post_title'], ENT_QUOTES, "UTF-8"); ?></h2>
             <p><?= htmlspecialchars($output['post_text'], ENT_QUOTES, "UTF-8"); ?></p>
-            <?php if(htmlspecialchars($output['created_at'], ENT_QUOTES, "UTF-8") !== ''){
-                ?><img class="post_images" src="<?= htmlspecialchars($output['post_image'], ENT_QUOTES, "UTF-8"); ?>" alt="Bild nicht verfügbar"><?php
-            }
-            ?> 
+            <?php if( htmlspecialchars($output['post_image'], ENT_QUOTES, "UTF-8") !== ''){
+            ?><img class="post_images" src="<?= htmlspecialchars($output['post_image'], ENT_QUOTES, "UTF-8"); ?>" onError="this.src='ersatzbild.png';" alt="Bild nicht verfügbar" /><?php
+        }
+        ?>     
             <p><?= htmlspecialchars($output['created_at'], ENT_QUOTES, "UTF-8"); ?></p>
         </div>
         <?php

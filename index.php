@@ -25,7 +25,7 @@
             <h4><?= htmlspecialchars($output['post_title'], ENT_QUOTES, "UTF-8"); ?></h1>
             <p><?= htmlspecialchars($output['post_text'], ENT_QUOTES, "UTF-8"); ?></p>
             <?php if(htmlspecialchars($output['created_at'], ENT_QUOTES, "UTF-8") !== ''){
-                ?><img class="post_images" src="<?= htmlspecialchars($output['post_image'], ENT_QUOTES, "UTF-8"); ?>" alt="Post Image"><?php
+                ?><img class="post_images" src="<?= htmlspecialchars($output['post_image'], ENT_QUOTES, "UTF-8"); ?>" alt="Bild nicht verfügbar"><?php
             }
             ?> 
             <p><?= htmlspecialchars($output['created_at'], ENT_QUOTES, "UTF-8"); ?></p>

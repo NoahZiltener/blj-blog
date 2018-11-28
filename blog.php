@@ -42,7 +42,7 @@
         }
         if( sizeof($errors) === 0){ 
             $stmt = $dbh->prepare("INSERT INTO `post` (created_by, created_at, post_title, post_text , post_image) VALUES(:created_by, NOW(), :post_title, :post_text, :post_image) ");
-            $stmt->execute([':created_by' => $name, ':post_title' => $title, ':post_text' => $blog, 'post_image' => $image  ]);
+            $stmt->execute([':created_by' => $name, ':post_title' => $title, ':post_text' => $blog, ':post_image' => $image  ]);
             ?>
             <ul class="succes-box">
                 <li>Post wurde abgesendet</li>

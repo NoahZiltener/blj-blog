@@ -12,9 +12,9 @@
         <h1 class="form-title">Noahs Blog</h1>
         <p>Das sind die persöndlichen Blogs von den andern</p>
 <?php
-    $user = 'root';
-    $pass = '';
-    $dbh = new PDO('mysql:host=localhost;dbname=blogdb', $user, $pass);
+    $user = 'guest';
+    $pass = 'blj12345';
+    $dbh = new PDO('mysql:host=10.20.16.101;dbname=blogdb', $user, $pass);
     
     $stmt = $dbh->prepare('SELECT * FROM andereblogs');
     $stmt->execute();

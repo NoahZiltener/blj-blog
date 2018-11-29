@@ -1,12 +1,3 @@
-<!DOCTYPE html>
-<html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <title>Blog</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
 <?php
     $user = 'root';
     $pass = '';
@@ -61,34 +52,3 @@
     
     }
         ?>
-
-        <form name="blog-form" action="blog.php" method="post">
-
-            <fieldset>
-                <legend class="form-legend">Dein Blog</legend>
-                <div class="form-group">
-                    <label class="form-label" for="name">Ihr Name</label>
-                    <input class="form-control" type="text" id="name" name="name">
-                </div>
-                <div class="form-group">
-                    <label class="form-label" for="title">Titel</label>
-                    <input class="form-control" type="text" id="title" name="title">
-                </div>
-                <div class="form-group">
-                    <label for="note" class="form-label">Blog Inhalt</label>
-                    <textarea name="blog" id="blog" rows="5" class="form-control"></textarea>
-                </div>
-                <div class="form-group">
-                    <label class="form-label" for="image">Bild</label>
-                    <input class="form-control" type="text" id="image" name="image">
-                </div>
-            </fieldset>
-            <div class="form-actions">
-                <input class="btn btn-primary" type="submit" value="Absenden">
-                <a href="index.php" class="btn">Zu den Blogs</a>
-            </div>
-        </form>
-    </div>
-    
-</body>
-</html>

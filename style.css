@@ -73,13 +73,25 @@ fieldset {
 }
 .voting{
     align-items: center;
-    margin: 0%;
+    float: left;
+    width: 100%;
 }
 .votingtext{
     display: inline-block;
     margin-bottom: 0%;
     margin-top: 3%;
 }
-.vote{
-    display: none;
+.voting{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.container{
+    display: flex;
+    justify-content: flex-start;
+    flex-grow: 1;
+    height: 50px;
+}
+.votes{
+    float: left;
 }

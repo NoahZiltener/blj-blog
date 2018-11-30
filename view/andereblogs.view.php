@@ -1,3 +1,4 @@
+<?php include 'model/andereblogs.model.php' ?>
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -17,7 +18,11 @@
                     <a href="index.php?page=home" class="btn">Zum Blog</a>
                 </form>
         </div>
-        <?php include 'model/andereblogs.model.php' ?>           
+        <?php foreach($stmt as $output):?>
+            <div class="form-actions">
+                <a href="http://<?= htmlspecialchars($output['ip'], ENT_QUOTES, "UTF-8");?><?= htmlspecialchars($output['pfad'], ENT_QUOTES, "UTF-8");?>"><?= htmlspecialchars($output['name'], ENT_QUOTES, "UTF-8"); ?></a>
+            </div>
+        <?php endforeach; ?>     
 
     </div>
 </body>

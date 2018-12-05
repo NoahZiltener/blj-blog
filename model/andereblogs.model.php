@@ -4,6 +4,4 @@
     $dbh = new PDO('mysql:host=10.20.16.102;dbname=blogdb', $user, $pass);
     
     $stmt = $dbh->prepare('SELECT * FROM andereblogs');
-    $stmt->execute();
-    
-    
+    $stmt->execute();   
